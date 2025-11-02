@@ -4,20 +4,6 @@
 import random
 import string   
 
-# Import the number of instances names are to be generated for
-def import_instance_count():
-    """Import the number of instances from user input."""
-    while True:
-        try:
-            count = int(input("Enter the number of instance names to generate: "))
-            if count > 0:
-                return count
-            else:
-                print("Please enter a positive integer.")
-        except ValueError:
-            print("Invalid input. Please enter a valid integer.") 
-            
-
 # Import the number of names to be generated from user input
 def generate_random_name(length=18):
     """Generate a random name of specified length."""
@@ -30,5 +16,7 @@ if __name__ == "__main__":
     random_name = generate_random_name(name_length)
     print(f"Generated Random Name: {random_name}")  
 
-
+# Function to generate a random name
+def function_generate_name():
+    return generate_random_name()
 
